@@ -53,6 +53,7 @@ RCT_EXPORT_METHOD(showSimpleText:(NSString *)message duration:(NSInteger)duratio
         self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         self.hud.bezelView.opaque = 0.8;
         self.hud.label.textColor = [UIColor whiteColor];
+        self.hud.activityIndicatorColor =[UIColor whiteColor];
         if (self.hud) {
             [self.hud hideAnimated:YES afterDelay:duration / 1000];
             self.hud = NULL;
@@ -72,11 +73,12 @@ RCT_EXPORT_METHOD(showSpinIndeterminate)
         self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         self.hud.bezelView.opaque = 0.8;
         self.hud.label.textColor = [UIColor whiteColor];
+        self.hud.activityIndicatorColor =[UIColor whiteColor];
     });
 }
 RCT_EXPORT_METHOD(showSpinIndeterminateWithTitle:(NSString *)title)
 {
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         if(self.hud){
             [self.hud hideAnimated:YES];
@@ -88,6 +90,7 @@ RCT_EXPORT_METHOD(showSpinIndeterminateWithTitle:(NSString *)title)
         self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         self.hud.bezelView.opaque = 0.8;
         self.hud.label.textColor = [UIColor whiteColor];
+        self.hud.activityIndicatorColor =[UIColor whiteColor];
     });
     
 }
@@ -105,6 +108,7 @@ RCT_EXPORT_METHOD(showSpinIndeterminateWithTitleAndDetails:(NSString *)title con
         self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         self.hud.bezelView.opaque = 0.8;
         self.hud.label.textColor = [UIColor whiteColor];
+        self.hud.activityIndicatorColor =[UIColor whiteColor];
     });
 }
 RCT_EXPORT_METHOD(showDeterminate:(NSInteger *)mode title:(NSString *)title details:(NSString *)details)
@@ -118,6 +122,7 @@ RCT_EXPORT_METHOD(showDeterminate:(NSInteger *)mode title:(NSString *)title deta
         self.hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
         self.hud.bezelView.opaque = 0.8;
         self.hud.label.textColor = [UIColor whiteColor];
+        self.hud.activityIndicatorColor =[UIColor whiteColor];
         
         if(mode == RNProgressHUDModeAnnularDeterminate){
             self.hud.mode = MBProgressHUDModeAnnularDeterminate;
@@ -131,7 +136,7 @@ RCT_EXPORT_METHOD(showDeterminate:(NSInteger *)mode title:(NSString *)title deta
         if(details){
             self.hud.detailsLabel.text = details;
         }
-     
+        
     });
 }
 

@@ -1,4 +1,4 @@
-package com.amsoft.RNProgressHUB;
+package com.amsoft.RNProgressHUD;
 
 import android.app.Activity;
 
@@ -15,11 +15,11 @@ import java.util.List;
 /**
  * Created by arnoma2015 on 16/9/13.
  */
-public class RNProgressHUBPackage implements ReactPackage {
+public class RNProgressHUDPackage implements ReactPackage {
 
 //    private Activity mActivity = null;
 //
-//    public RNProgressHUBPackage(Activity activity){
+//    public RNProgressHUDPackage(Activity activity){
 //        mActivity = activity;
 //    }
 
@@ -28,7 +28,7 @@ public class RNProgressHUBPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new RNProgressHUBModule(reactContext));
+        modules.add(new RNProgressHUDModule(reactContext));
         return modules;
     }
 

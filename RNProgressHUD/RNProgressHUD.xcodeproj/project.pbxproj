@@ -6,12 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		5E3C97311D86F1260020B9A8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C97301D86F1260020B9A8 /* MBProgressHUD.m */; };
-		5E8C810A1D86A08B00F9EC58 /* RNProgressHUB.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E8C81091D86A08B00F9EC58 /* RNProgressHUB.h */; };
-		5E8C810C1D86A08B00F9EC58 /* RNProgressHUB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C810B1D86A08B00F9EC58 /* RNProgressHUB.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		5E8C81041D86A08B00F9EC58 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,18 +13,17 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5E8C810A1D86A08B00F9EC58 /* RNProgressHUB.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5E3C972F1D86F1260020B9A8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		5E3C97301D86F1260020B9A8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		5E8C81061D86A08B00F9EC58 /* libRNProgressHUB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNProgressHUB.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E8C81091D86A08B00F9EC58 /* RNProgressHUB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNProgressHUB.h; sourceTree = "<group>"; };
-		5E8C810B1D86A08B00F9EC58 /* RNProgressHUB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNProgressHUB.m; sourceTree = "<group>"; };
+		5225DDE91F3AF40D0039FFB6 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		5225DDEA1F3AF40D0039FFB6 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5225DDEB1F3AF40D0039FFB6 /* RNProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNProgressHUD.h; sourceTree = "<group>"; };
+		5225DDEC1F3AF40D0039FFB6 /* RNProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNProgressHUD.m; sourceTree = "<group>"; };
+		5E8C81061D86A08B00F9EC58 /* libRNProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,10 +37,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5225DDE81F3AF40D0039FFB6 /* RNProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5225DDE91F3AF40D0039FFB6 /* MBProgressHUD.h */,
+				5225DDEA1F3AF40D0039FFB6 /* MBProgressHUD.m */,
+				5225DDEB1F3AF40D0039FFB6 /* RNProgressHUD.h */,
+				5225DDEC1F3AF40D0039FFB6 /* RNProgressHUD.m */,
+			);
+			path = RNProgressHUD;
+			sourceTree = "<group>";
+		};
 		5E8C80FD1D86A08B00F9EC58 = {
 			isa = PBXGroup;
 			children = (
-				5E8C81081D86A08B00F9EC58 /* RNProgressHUB */,
+				5225DDE81F3AF40D0039FFB6 /* RNProgressHUD */,
 				5E8C81071D86A08B00F9EC58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,28 +59,17 @@
 		5E8C81071D86A08B00F9EC58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E8C81061D86A08B00F9EC58 /* libRNProgressHUB.a */,
+				5E8C81061D86A08B00F9EC58 /* libRNProgressHUD.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5E8C81081D86A08B00F9EC58 /* RNProgressHUB */ = {
-			isa = PBXGroup;
-			children = (
-				5E3C972F1D86F1260020B9A8 /* MBProgressHUD.h */,
-				5E3C97301D86F1260020B9A8 /* MBProgressHUD.m */,
-				5E8C81091D86A08B00F9EC58 /* RNProgressHUB.h */,
-				5E8C810B1D86A08B00F9EC58 /* RNProgressHUB.m */,
-			);
-			path = RNProgressHUB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5E8C81051D86A08B00F9EC58 /* RNProgressHUB */ = {
+		5E8C81051D86A08B00F9EC58 /* RNProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E8C810F1D86A08B00F9EC58 /* Build configuration list for PBXNativeTarget "RNProgressHUB" */;
+			buildConfigurationList = 5E8C810F1D86A08B00F9EC58 /* Build configuration list for PBXNativeTarget "RNProgressHUD" */;
 			buildPhases = (
 				5E8C81021D86A08B00F9EC58 /* Sources */,
 				5E8C81031D86A08B00F9EC58 /* Frameworks */,
@@ -86,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = RNProgressHUB;
+			name = RNProgressHUD;
 			productName = RNProgressHUB;
-			productReference = 5E8C81061D86A08B00F9EC58 /* libRNProgressHUB.a */;
+			productReference = 5E8C81061D86A08B00F9EC58 /* libRNProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5E8C81011D86A08B00F9EC58 /* Build configuration list for PBXProject "RNProgressHUB" */;
+			buildConfigurationList = 5E8C81011D86A08B00F9EC58 /* Build configuration list for PBXProject "RNProgressHUD" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5E8C81051D86A08B00F9EC58 /* RNProgressHUB */,
+				5E8C81051D86A08B00F9EC58 /* RNProgressHUD */,
 			);
 		};
 /* End PBXProject section */
@@ -127,8 +120,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8C810C1D86A08B00F9EC58 /* RNProgressHUB.m in Sources */,
-				5E3C97311D86F1260020B9A8 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +163,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -210,7 +201,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -246,7 +237,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5E8C81011D86A08B00F9EC58 /* Build configuration list for PBXProject "RNProgressHUB" */ = {
+		5E8C81011D86A08B00F9EC58 /* Build configuration list for PBXProject "RNProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E8C810D1D86A08B00F9EC58 /* Debug */,
@@ -255,7 +246,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E8C810F1D86A08B00F9EC58 /* Build configuration list for PBXNativeTarget "RNProgressHUB" */ = {
+		5E8C810F1D86A08B00F9EC58 /* Build configuration list for PBXNativeTarget "RNProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E8C81101D86A08B00F9EC58 /* Debug */,

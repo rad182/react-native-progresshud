@@ -1,23 +1,23 @@
 //
-//  RNProgressHUB.m
-//  RNProgressHUB
+//  RNProgressHUD.m
+//  RNProgressHUD
 //
 //  Created by ma arno on 16/9/12.
 //  Copyright © 2016年 amsoft. All rights reserved.
 //
 
-#import "RNProgressHUB.h"
+#import "RNProgressHUD.h"
 #import "MBProgressHUD.h"
 
 
-typedef NS_ENUM(NSInteger, RNProgressHUBMode) {
+typedef NS_ENUM(NSInteger, RNProgressHUDMode) {
     /// Ring-shaped progress view.
-    RNProgressHUBModeAnnularDeterminate,
+    RNProgressHUDModeAnnularDeterminate,
     /// Horizontal progress bar.
-    RNProgressHUBModeDeterminateHorizontalBar
+    RNProgressHUDModeDeterminateHorizontalBar
 };
 
-@interface RNProgressHUB()
+@interface RNProgressHUD()
 
 
 @property (nonatomic,strong) MBProgressHUD *hub;
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, RNProgressHUBMode) {
 
 @end
 
-@implementation RNProgressHUB
+@implementation RNProgressHUD
 
 
 -(UIWindow *)window{
@@ -100,9 +100,9 @@ RCT_EXPORT_METHOD(showDeterminate:(NSInteger *)mode title:(NSString *)title deta
         }
         self.hub = [MBProgressHUD showHUDAddedTo:self.window animated:YES];
     
-        if(mode == RNProgressHUBModeAnnularDeterminate){
+        if(mode == RNProgressHUDModeAnnularDeterminate){
             self.hub.mode = MBProgressHUDModeAnnularDeterminate;
-        } else if(mode == RNProgressHUBModeDeterminateHorizontalBar){
+        } else if(mode == RNProgressHUDModeDeterminateHorizontalBar){
             self.hub.mode = MBProgressHUDModeDeterminateHorizontalBar;
         }
         

@@ -1,4 +1,4 @@
-package com.amsoft.RNProgressHUB;
+package com.amsoft.RNProgressHUD;
 
 
 import android.app.Activity;
@@ -16,17 +16,17 @@ import com.kaopiz.kprogresshud.*;
  *
  * Created by arnoma2015 on 16/9/13.
  */
-public class RNProgressHUBModule  extends ReactContextBaseJavaModule {
+public class RNProgressHUDModule  extends ReactContextBaseJavaModule {
     
     private KProgressHUD currentHud = null;
 
-    public RNProgressHUBModule(ReactApplicationContext reactContext) {
+    public RNProgressHUDModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
     @Override
     public String getName() {
-        return "RNProgressHUB";
+        return "RNProgressHUD";
     }
 
 

@@ -1,12 +1,12 @@
-# react-native-progresshub 
-[![npm version](https://img.shields.io/badge/npm-v3.8.6-red.svg)](https://www.npmjs.com/package/react-native-progresshub)
+# react-native-progresshud 
+[![npm version](https://img.shields.io/badge/npm-v3.8.6-red.svg)](https://www.npmjs.com/package/react-native-progresshud)
 
 An implement of ProgressHUD for React-Native, similar to MBProgressHUD for iOS and KProgressHUD for Android.
 
 ## Installation
 
 ```
-$ npm install react-native-progresshub --save
+$ npm install react-native-progresshud --save
 $ rnpm link
 ```
 
@@ -26,12 +26,12 @@ versions you should add `react` as a dependency in your `package.json`.
 
 
 ```js
-import RNProgressHUB from 'react-native-progresshub';
+import RNProgressHUD from 'react-native-progresshud';
 ```
 or
 
 ```js
-var RNProgressHUB = require('react-native-progresshub');
+var RNProgressHUD = require('react-native-progresshud');
 ```
 
 
@@ -42,21 +42,21 @@ Note :  used in Component
 
 Simple text with duration
 ```js
-RNProgressHUB.showSimpleText("Message",2000);
+RNProgressHUD.showSimpleText("Message",2000);
 ```
 
 Spinner Indeterminate
 ```js
-RNProgressHUB.showSpinIndeterminate();
-RNProgressHUB.showSpinIndeterminate("Title");
-RNProgressHUB.showSpinIndeterminate("Title","Details");
+RNProgressHUD.showSpinIndeterminate();
+RNProgressHUD.showSpinIndeterminate("Title");
+RNProgressHUD.showSpinIndeterminate("Title","Details");
 ```
 
 Determinate loading
 ```js
     var progress = 0.1;
 
-    RNProgressHUB.showDeterminate({
+    RNProgressHUD.showDeterminate({
       mode:'bar', //"bar" or "annular"   default:"annular"
       title:"title", 
       details:"details"
@@ -75,13 +75,13 @@ Determinate loading
 
 Progress within determinate
 ```js
-RNProgressHUB.setProgress(progress); // progress: 0 ~ 1
+RNProgressHUD.setProgress(progress); // progress: 0 ~ 1
 ```
 
 
 Dismiss
 ```js
-RNProgressHUB.dismiss();
+RNProgressHUD.dismiss();
 ```
 
 

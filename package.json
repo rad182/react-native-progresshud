@@ -1,5 +1,5 @@
 {
-  "name": "react-native-progresshub",
+  "name": "react-native-progresshud",
   "version": "0.1.2",
   "description": "An implement of ProgressHUD for React-Native, similar to MBProgressHUD for iOS and KProgressHUD for Android.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:frontendhot/react-native-progresshub.git"
+    "url": "git+ssh://git@github.com:mokai/react-native-progresshud.git"
   },
   "author": "PanMa",
   "license": "ISC"

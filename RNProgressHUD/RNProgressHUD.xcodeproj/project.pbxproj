@@ -6,6 +6,12 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52C4F09D1F3B2881002AFE67 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225DDEA1F3AF40D0039FFB6 /* MBProgressHUD.m */; };
+		52C4F09E1F3B2881002AFE67 /* RNProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5225DDEC1F3AF40D0039FFB6 /* RNProgressHUD.m */; };
+		52C4F09F1F3B2887002AFE67 /* RNProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5225DDEB1F3AF40D0039FFB6 /* RNProgressHUD.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		5E8C81041D86A08B00F9EC58 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -13,6 +19,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				52C4F09F1F3B2887002AFE67 /* RNProgressHUD.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +87,7 @@
 			dependencies = (
 			);
 			name = RNProgressHUD;
-			productName = RNProgressHUB;
+			productName = RNProgressHUD;
 			productReference = 5E8C81061D86A08B00F9EC58 /* libRNProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -120,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C4F09D1F3B2881002AFE67 /* MBProgressHUD.m in Sources */,
+				52C4F09E1F3B2881002AFE67 /* RNProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

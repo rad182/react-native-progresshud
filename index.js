@@ -9,22 +9,22 @@ var determinateMode = {
     "bar":1
 };
 
-var ProgressHUB = function () {
+var ProgressHUD = function () {
     this.determinateMode = determinateMode["annular"];
 };
 
-ProgressHUB.prototype.setDeterminateMode = function (mode) {
+ProgressHUD.prototype.setDeterminateMode = function (mode) {
     if(determinateMode[mode] !== null){
         this.determinateMode = determinateMode[mode];
     }
 };
-ProgressHUB.prototype.showSimpleText = function (message = 'default',duration = 2000) {
+ProgressHUD.prototype.showSimpleText = function (message = 'default',duration = 2000) {
     RNProgressHUD.showSimpleText(message,duration);
 };
-ProgressHUB.prototype.dismiss = function () {
+ProgressHUD.prototype.dismiss = function () {
     RNProgressHUD.dismiss();
 };
-ProgressHUB.prototype.showSpinIndeterminate = function () {
+ProgressHUD.prototype.showSpinIndeterminate = function () {
      var args = [].slice.call(arguments);
     if(args.length === 0){
         RNProgressHUD.showSpinIndeterminate();
@@ -36,7 +36,7 @@ ProgressHUB.prototype.showSpinIndeterminate = function () {
         throw Error("params error");
     }
 };
-ProgressHUB.prototype.showDeterminate = function ({mode,title,details} = {}) {
+ProgressHUD.prototype.showDeterminate = function ({mode,title,details} = {}) {
     var modeIndex = 0;
     if(determinateMode[mode] !== null && determinateMode[mode] !== undefined){
         modeIndex = determinateMode[mode];
@@ -45,7 +45,7 @@ ProgressHUB.prototype.showDeterminate = function ({mode,title,details} = {}) {
     }
     RNProgressHUD.showDeterminate(modeIndex,title,details);
 };
-ProgressHUB.prototype.setProgress = function (progress) {
+ProgressHUD.prototype.setProgress = function (progress) {
     if(typeof progress == 'number'){
         RNProgressHUD.setProgress(progress);
     } else {
@@ -53,7 +53,7 @@ ProgressHUB.prototype.setProgress = function (progress) {
     }
 };
 
-export default new ProgressHUB();
+export default new ProgressHUD();
 
 
 
